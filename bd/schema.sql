@@ -17,7 +17,7 @@ CREATE TABLE categorias(
 CREATE TABLE estilosDePelea(
   estilo_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nombreDelEstilo VARCHAR(25) NOT NULL,
-  origen CHAR(50) NOT NULL
+  origen VARCHAR(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE peleadores(
@@ -29,7 +29,7 @@ CREATE TABLE peleadores(
     FOREIGN KEY (pais_id)
     REFERENCES paises(pais_id)
     ON DELETE RESTRICT
-    ON UPDATE CASCADE
+    ON UPDATE CASCADE,
   categoria_id INTEGER UNSIGNED,
     FOREIGN KEY (categoria_id)
     REFERENCES categorias(categoria_id)

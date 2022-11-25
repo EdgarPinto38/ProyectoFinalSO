@@ -262,28 +262,28 @@ INSERT INTO categorias (nombre, pesoLimiteSuperior,pesoLimiteInferior) VALUES
 ("peso pesado",120,93);
 
 INSERT INTO estilosDePelea (nombreDelEstilo, origen) VALUES
-1("boxeo","reino unido"),
-2("jiu jitsu brasileño","brasil"),
-3("lucha olimpica","grecia"),
-4("kickboxing","japon"),
-5("kung fu","china"),
-6("judo","japon"),
-7("taekwondo","corea"),
-8("karate","japon"),
-9("capoeira","brasil"),
-10("muay thai","tailandia");
+("boxeo","reino unido"),
+("jiu jitsu brasileño","brasil"),
+("lucha olimpica","grecia"),
+("kickboxing","japon"),
+("kung fu","china"),
+("judo","japon"),
+("taekwondo","corea"),
+("karate","japon"),
+("capoeira","brasil"),
+("muay thai","tailandia");
 
-INSERT INTO peleadores (Nombre, fechaDeNacimiento,genero) VALUES
-("Brandon Moreno","1993-12-7","M"),
-("Conor McGregor","1988-07-14","M"),
-("Alexa Grasso","1993-08-09","F"),
-("Max Holloway","1991-12-4","M"),
-("Rose Namajunas","1992-06-29","F"),
-("Yair Rodriguez","1992-10-6","M"),
-("Marlon Vera","1992-12-2","M"),
-("Zhang Weili","1989-08-13","F"),
-("Derrick Lewis","1985-02-07","M"),
-("Amanda Nunes","1988-5-30","F");
+INSERT INTO peleadores (Nombre, fechaDeNacimiento,genero,pais_id,categoria_id) VALUES
+("Brandon Moreno","1993-12-7","M",141,4),
+("Conor McGregor","1988-07-14","M",97,7),
+("Alexa Grasso","1993-08-09","F",141,2),
+("Max Holloway","1991-12-4","M",65,6),
+("Rose Namajunas","1992-06-29","F",65,1),
+("Yair Rodriguez","1992-10-6","M",141,6),
+("Marlon Vera","1992-12-2","M",57,5),
+("Zhang Weili","1989-08-13","F",42,1),
+("Derrick Lewis","1985-02-07","M",65,11),
+("Amanda Nunes","1988-5-30","F",31,3);
 
 INSERT INTO peleadoresPorPais (peleador_id, pais_id) VALUES
 (1,141),
