@@ -70,7 +70,7 @@ SELECT * FROM estilosPorPeleador;
 INSERT INTO paises(nombre,dominio) VALUES ("Kosovo","KO");
 SELECT * FROM paises;
 SELECT * FROM paises WHERE pais_id = 141;
-UPDATE paises SET nombre ="Estados Unidos Mexicanos" dominio ="EM" WHERE pais_id = 141;
+UPDATE paises SET nombre ="Estados Unidos Mexicanos", dominio ="EM" WHERE pais_id = 141;
 DELETE FROM paises WHERE pais_id = 247;
 SELECT * FROM paises;
 
