@@ -33,13 +33,6 @@ Leer un país en particular
 Actualizar un país
 Borrar un país
 
-Peleadores por país
-Crear un peleador por país
-Leer todos los peladores de todos los paises
-Leer todos los peleadores de un país en particular.
-Actualizar un peleador por país.
-Borrar un peleador por país.
-
 */
 
 INSERT INTO peleadores(nombre,fechaDeNacimiento,genero,pais_id,categoria_id)VALUES("Edson Gutierrez", "2003-02-07","M",7,4);
@@ -57,4 +50,30 @@ UPDATE estilosDePelea SET nombreDelEstilo = "Full Contact", origen = "Estados Un
 SELECT * FROM estilosDePelea;
 DELETE FROM estilosDePelea WHERE estilo_id = 11;
 SELECT * FROM estilosDePelea;
+
+INSERT INTO categorias (nombre, pesoLimiteSuperior, pesoLimiteInferior) VALUES ("peso atomo",47,42);
+SELECT * FROM categorias;
+SELECT * FROM categorias WHERE categoria_id = 1;
+UPDATE categorias SET nombre = "peso completo", pesoLimiteSuperior = 150, pesoLimiteInferior = 120 WHERE categoria_id = 11;
+SELECT * FROM categorias;
+DELETE FROM categorias WHERE categoria_id = 12;
+SELECT * FROM categorias;
+
+INSERT INTO estilosPorPeleador(peleador_id,estilo_id) VALUES (10,10);
+SELECT * FROM estilosPorPeleador;
+SELECT * FROM estilosPorPeleador WHERE estilosPorPeleador_id = 1;
+UPDATE estilosPorPeleador SET peleador_id = 3, estilo_id = 3 WHERE estilosPorPeleador_id = 5;
+SELECT * FROM estilosPorPeleador;
+DELETE FROM estilosPorPeleador WHERE estilosPorPeleador_id = 18;
+SELECT * FROM estilosPorPeleador;
+
+INSERT INTO paises(nombre,dominio) VALUES ("Kosovo","KO");
+SELECT * FROM paises;
+SELECT * FROM paises WHERE pais_id = 141;
+UPDATE paises SET nombre ="Estados Unidos Mexicanos" dominio ="EM" WHERE pais_id = 141;
+DELETE FROM paises WHERE pais_id = 247;
+SELECT * FROM paises;
+
+
+
 
