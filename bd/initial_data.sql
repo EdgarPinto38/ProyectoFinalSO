@@ -1,3 +1,4 @@
+USE UFC;
 INSERT INTO paises (nombre, dominio) VALUES
   ("Afganistán","AF"),
   ("Albania","AL"),

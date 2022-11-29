@@ -35,6 +35,7 @@ Borrar un país
 
 */
 
+USE UFC;
 INSERT INTO peleadores(nombre,fechaDeNacimiento,genero,pais_id,categoria_id)VALUES("Edson Gutierrez", "2003-02-07","M",7,4);
 SELECT * FROM peleadores;
 SELECT * FROM peleadores WHERE peleador_id = 1;
